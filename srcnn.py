@@ -25,4 +25,4 @@ class SRCNN(FunctionSet):
         h = F.relu(self.layer2(h))
         h = self.layer3(h)
 
-        return F.mean_square_error(h, t)
+        return F.mean_squared_error(h, t)
